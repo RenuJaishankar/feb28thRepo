@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Change your html tag to the following: -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- the xmlns attribute gives us a namespace so that we can use the th attribute -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>
+    This html file works.
+</h1>
+<div>
+
+    <div class="is-flex">
+        <div class="is-card">
+            <span>
+                element
+            </span>
+        </div>
+    </div>
+    <ul>
+        <li th:each=" movie : ${movies}">
+            <h1 th:text="${movie.title}">
+
+            </h1>
+            <!-- </li>-->
+            <!-- <li th:each=" movie : $(movies"-->
+        </li>
+    </ul>
+</div>
+</body>
+</html>

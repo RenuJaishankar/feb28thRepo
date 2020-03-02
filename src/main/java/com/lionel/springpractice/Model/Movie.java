@@ -46,9 +46,13 @@ public class Movie {
     public String getTitle() {
         return title;
     }
+    public Movie(){
+
+    }
     public Movie(String title, int year, String genre) {
         this.title = title;
         this.year = year;
         this.genre = genre;
     }
+
 }
